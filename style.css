@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before{
+
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+
+:root{
+    /*Primary*/
+    --clr-yellow:hsl(47,88%,63%);
+    /*Neutral*/
+    --clr-white:hsl(0, 0%, 100%);
+    --clr--grey:hsl(0, 0%, 50%);
+    --clr-black:hsl(0, 0%, 7%);
+}
+
+
+@font-face {
+    font-family:"Figtree" ;
+    src: url(Figtree-VariableFont_wght.ttf);
+    
+}
+
+
+body{
+    
+    height:100vh;   
+    background-color: var(--clr-yellow);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Figtree", sans-serif;
+}
+
+.container{
+     
+    border: 1px solid black;
+    box-shadow: 0.5em 0.5em 0 black;
+    border-radius: 20px;
+    padding:1.4em;
+    background-color: var(--clr-white);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    max-width: 20.45em;
+    min-height: 31.35em; 
+    max-height:31.35em;
+    
+    
+}
+
+.card__ilust{
+    width:17.5em;
+    height:12.5em;  
+    object-fit: cover;
+    border-radius: 12px;
+    
+   
+}
+
+.card__h3{
+       
+    border-radius: 5px;
+    background-color:var(--clr-yellow);
+    font-weight: 800;
+    padding:2% 3.5%;
+    width:fit-content;
+}
+.profile__picture{
+
+    display:flex;
+    align-items: center;
+    gap:0.7em;
+}
+.card__date{
+
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.card__title{
+
+    font-weight: 800;
+    font-size:1.25rem;
+}
+.card__title:active{
+
+    color:var(--clr-yellow);
+    cursor:pointer;
+}
+
+.card__description{
+
+    color: var(--clr--grey);
+    font-size: 0.9rem;
+}
+
+.card__avatar{
+
+    width:2em;
+}
+
+.profile__name{
+
+    font-size: 0.9em;
+    font-weight: 800;
+}
+
+
+@media (min-width:768px){
+
+    .container{
+     
+        border: 1px solid black;
+        box-shadow: 0.5em 0.5em 0 black;
+        border-radius: 20px;
+        padding:1.4em;
+        background-color: var(--clr-white);
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;    
+        min-width:24em;        
+        min-height: 32.5em; 
+        
+        
+        
+    }
+    .card__ilust{
+        width:21em;
+        height:12.5em;  
+        object-fit: cover;
+        border-radius: 12px;
+        
+       
+    }
+    .card__title{
+
+        font-weight: 800;
+        font-size:1.5rem;
+    }
+    .card__date{
+
+        font-weight: 600;
+        font-size: 0.85rem;
+    }
+    .card__description{
+
+        color: var(--clr--grey);
+        font-size: 1rem;
+    }
+}
